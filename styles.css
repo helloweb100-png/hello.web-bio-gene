@@ -320,15 +320,9 @@ html.is-loading, html.is-loading body { overflow: hidden; }
 
 /* Marca */
 .brand { display: inline-flex; align-items: center; gap: 2px; line-height: 1; }
-.brand-mol { width: 24px; height: 22px; margin-right: 5px; }
-.brand-word {
-    font-family: var(--f-display); font-weight: 800;
-    font-size: 1.6rem; letter-spacing: -.04em;
-}
-.brand-word b { color: var(--blue-800); font-weight: 800; }
-.brand-word i { color: var(--red-600); font-style: normal; }
-.brand-x { width: 30px; height: 34px; margin-left: 3px; }
-.brand--light { background: var(--surface); padding: 12px 20px; border-radius: 999px; }
+.brand-logo { display: block; width: auto; height: 46px; }
+.brand--light { background: var(--surface); padding: 12px 20px; border-radius: 22px; }
+.brand--light .brand-logo { height: 64px; }
 
 .nav-links { display: none; position: relative; isolation: isolate; align-items: center; gap: 2px; }
 .nav-links a {
@@ -370,7 +364,8 @@ html.is-loading, html.is-loading body { overflow: hidden; }
 }
 @media (max-width: 639px) {
     .nav-pill { height: 58px; padding-left: 18px; }
-    .brand-word { font-size: 1.4rem; }
+    .brand-logo { height: 42px; }
+    .brand--light .brand-logo { height: 56px; }
 }
 
 /* Menú móvil */
